@@ -64,6 +64,7 @@ body {
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 10px 0;
 }
 .footer a{
     color: grey;
@@ -88,6 +89,7 @@ body {
 .cardContainer{
     display: flex;
     justify-content: space-between;
+    margin: 30px;
     
 }
 .popularArtists{
@@ -104,9 +106,34 @@ body {
 
 .spotifyPlaylists{
     padding: 16px;
+    
+}
+
+.playlistsCardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .playlistsCard{
     width: 200px;
     padding:10px;
     border-radius: 10px;
+    background-color: #252525;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.playlistsCard img{
+   width: 100%;
+   object-fit: contain; 
+   
+}
+
+.play{
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
